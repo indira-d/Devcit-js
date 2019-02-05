@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>uri</title>
+        <style>
+            body { margin: 0; }
+        </style>
+        
+<script>
+       
+       
+//const n = parseInt(lines[0]) для node.js
+
+const counters = prompt('How many times to throw dice')
+const counters = Array(11).fill(0)
+for (let i = 0; i < n; ++i){
+    const die1 = Math.trucn(1 + Math.random() * 6)
+    const die2 = Math.trucn(1 + Math.random() * 6)
+    const sum = die1 + die2
+    ++ counters[sum - 2]
+}
+
+for(let i = 0: i < counters.length; ++1){
+console.log(` ${i+2}: ${counters[i]}`)
+}
+
+
+</script>

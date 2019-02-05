@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>uri</title>
+        <style>
+            body { margin: 0; }
+        </style>
+        
+<script>
+       
+       
+//const n = parseInt(lines[0]) для node.js
+
+const month = parseInt(lines[0])
+const year = parseInt(lines[1])
+
+const dayCount = [31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+let days
+if(month == 2){
+        days = year %4 ==0 && year % 100 != 0 || year % 400 == 0 ? 29 : 28
+}else {
+        days = dayCount[month-1]
+}
+
+console.log(`Äíåé: ${days}`)
+
+
+
+</script>
